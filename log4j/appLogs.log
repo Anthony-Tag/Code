@@ -1,0 +1,16 @@
+[INFO]   - {org.log4j.demo.Main}  Hello from INFO      Apr-16-21 Friday EDT 16:52:07[WARN]   - {org.log4j.demo.Main}  Hello form WARN      Apr-16-21 Friday EDT 16:52:07[ERROR]   - {org.log4j.demo.Main}  Hello from ERROR      Apr-16-21 Friday EDT 16:52:07[FATAL]   - {org.log4j.demo.Main}  Hello from FATAL      Apr-16-21 Friday EDT 16:52:07[INFO]   - {org.log4j.demo.service.Service}  service1 was called with val : testservice1      Apr-16-21 Friday EDT 16:52:07[INFO]   - {org.log4j.demo.service.Service}  service1 done successfully      Apr-16-21 Friday EDT 16:52:07[INFO]   - {org.log4j.demo.service.Service}  service2 was called with val : testservice2      Apr-16-21 Friday EDT 16:52:07[INFO]   - {org.log4j.demo.service.Service}  service2 done successfully      Apr-16-21 Friday EDT 16:52:07[INFO]   - {org.log4j.demo.Main}  Hello from INFO      Apr-16-21 Friday EDT 16:54:18
+[WARN]   - {org.log4j.demo.Main}  Hello form WARN      Apr-16-21 Friday EDT 16:54:18
+[ERROR]   - {org.log4j.demo.Main}  Hello from ERROR      Apr-16-21 Friday EDT 16:54:18
+[FATAL]   - {org.log4j.demo.Main}  Hello from FATAL      Apr-16-21 Friday EDT 16:54:18
+[INFO]   - {org.log4j.demo.service.Service}  service1 was called with val : testservice1      Apr-16-21 Friday EDT 16:54:18
+[INFO]   - {org.log4j.demo.service.Service}  service1 done successfully      Apr-16-21 Friday EDT 16:54:18
+[INFO]   - {org.log4j.demo.service.Service}  service2 was called with val : testservice2      Apr-16-21 Friday EDT 16:54:18
+[INFO]   - {org.log4j.demo.service.Service}  service2 done successfully      Apr-16-21 Friday EDT 16:54:18
+[INFO]   - {org.log4j.demo.Main}  Hello from INFO      Apr-16-21 Friday EDT 17:02:45
+[WARN]   - {org.log4j.demo.Main}  Hello form WARN      Apr-16-21 Friday EDT 17:02:45
+[ERROR]   - {org.log4j.demo.Main}  Hello from ERROR      Apr-16-21 Friday EDT 17:02:45
+[FATAL]   - {org.log4j.demo.Main}  Hello from FATAL      Apr-16-21 Friday EDT 17:02:45
+[INFO]   - {org.log4j.demo.service.Service}  service1 was called with val : testservice1      Apr-16-21 Friday EDT 17:02:45
+[INFO]   - {org.log4j.demo.service.Service}  service1 done successfully      Apr-16-21 Friday EDT 17:02:45
+[INFO]   - {org.log4j.demo.service.Service}  service2 was called with val : testservice2      Apr-16-21 Friday EDT 17:02:45
+[INFO]   - {org.log4j.demo.service.Service}  service2 done successfully      Apr-16-21 Friday EDT 17:02:45
