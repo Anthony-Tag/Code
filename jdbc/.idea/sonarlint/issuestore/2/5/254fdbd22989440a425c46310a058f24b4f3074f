@@ -1,0 +1,15 @@
+
+q
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ8¢Áµ­/
+e
+java:S2259,"HA "NullPointerException" could be thrown; "connection" is nullable here.(ôêÂœ8öÀª/
+O
+java:S4925
+"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8öÀª/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(„µˆ8öÀª/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(”Û¨å8öÀª/
+]	java:S125"<This block of commented-out lines of code should be removed.(’•ìËûÿÿÿÿ8¶‡ûª/
+X	java:S125""<This block of commented-out lines of code should be removed.(¥ü‡ó8¥şãª/
+T	java:S106$"9Replace this use of System.out or System.err by a logger.(û¸åd8öÀª/
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(¥ÈâÃıÿÿÿÿ8¾êÆ­/
+Z	java:S106-"9Replace this use of System.out or System.err by a logger.(°£ƒøÿÿÿÿ8öÀª/

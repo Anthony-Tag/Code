@@ -1,0 +1,17 @@
+
+i
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ8Ÿµ©/
+e
+java:S2259/"HA "NullPointerException" could be thrown; "connection" is nullable here.(ôêÂœ8øë©/
+O
+java:S4925"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8æâÒ¨/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(„µˆ8„•Ó¨/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(”Û¨å8ßŞ¨/
+T	java:S106"9Replace this use of System.out or System.err by a logger.(û¸åd8Ê˜í¨/
+U	java:S106#"9Replace this use of System.out or System.err by a logger.(ÊîûÖ8´ªø¨/
+U	java:S106$"9Replace this use of System.out or System.err by a logger.(È¹Åˆ8¸ëû¨/
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(ëŞê¾8¸ëû¨/
+U	java:S106&"9Replace this use of System.out or System.err by a logger.(ÔŞ—È8¸ëû¨/
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(¸¡ ôúÿÿÿÿ8òŠ©/
+U	java:S106("9Replace this use of System.out or System.err by a logger.(°ÄÙæ8¸ëû¨/
+Z	java:S1060"9Replace this use of System.out or System.err by a logger.(°£ƒøÿÿÿÿ8ë›‘©/
