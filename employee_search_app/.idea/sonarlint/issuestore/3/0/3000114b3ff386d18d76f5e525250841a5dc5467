@@ -1,0 +1,47 @@
+
+r
+java:S2095µ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ8ãüíÖ/
+q
+java:S20956"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ8·çÎÖ/
+q
+java:S2095u"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ8³ÃÚÖ/
+q
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ8¥£Õ/
+q
+java:S2095U"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ8Õ¼àÖ/
+r
+java:S2095Õ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ8˜¼ñÖ/
+r
+java:S2095õ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ8ğü¹Õ/
+r
+java:S2095•"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ8ä´Õ/
+i
+java:S1192&"GDefine a constant instead of duplicating this literal "gender" 8 times.(à´‹Êøÿÿÿÿ8ğü¹Õ/
+c
+java:S1192"GDefine a constant instead of duplicating this literal "deptid" 8 times.(ğªõ:8ğü¹Õ/
+j
+java:S1192%"HDefine a constant instead of duplicating this literal "contact" 8 times.(ó½æŞÿÿÿÿÿ8ğü¹Õ/
+Œ
+java:S1192,"jDefine a constant instead of duplicating this literal "Internal error occured.. Contact SysAdmin" 7 times.(‹È‘ÿÿÿÿÿ8ÿçåÖ/
+m
+java:S1192"PDefine a constant instead of duplicating this literal "department_name" 8 times.(úş•´8ğü¹Õ/
+`
+java:S1155f">Use isEmpty() to check whether the collection is empty or not.(—¶¿˜ıÿÿÿÿ8Õ¼àÖ/
+a
+java:S1155†">Use isEmpty() to check whether the collection is empty or not.(—¶¿˜ıÿÿÿÿ8³ÃÚÖ/
+a
+java:S1155¦">Use isEmpty() to check whether the collection is empty or not.(—¶¿˜ıÿÿÿÿ8ŠÖåÕ/
+a
+java:S1155Æ">Use isEmpty() to check whether the collection is empty or not.(—¶¿˜ıÿÿÿÿ8ãüíÖ/
+a
+java:S1155æ">Use isEmpty() to check whether the collection is empty or not.(—¶¿˜ıÿÿÿÿ8˜¼ñÖ/
+a
+java:S1155†">Use isEmpty() to check whether the collection is empty or not.(—¶¿˜ıÿÿÿÿ8ŠÖåÕ/
+U	java:S106+"9Replace this use of System.out or System.err by a logger.(îÍã8øÖ¢Õ/
+U	java:S106J"9Replace this use of System.out or System.err by a logger.(îÍã8·çÎÖ/
+U	java:S106j"9Replace this use of System.out or System.err by a logger.(îÍã8Õ¼àÖ/
+V	java:S106Š"9Replace this use of System.out or System.err by a logger.(îÍã8³ÃÚÖ/
+V	java:S106ª"9Replace this use of System.out or System.err by a logger.(îÍã8“óµÕ/
+V	java:S106Ê"9Replace this use of System.out or System.err by a logger.(îÍã8ãüíÖ/
+V	java:S106ê"9Replace this use of System.out or System.err by a logger.(îÍã8˜¼ñÖ/
+V	java:S106Š"9Replace this use of System.out or System.err by a logger.(îÍã8ğü¹Õ/
