@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+    <style>
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            text-decoration: underline;
+
+        }
+
+        table {
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <h2>User Registration Page</h2>
+        <form method="POST" action="#">
+            <table border="1px">
+                <tr>
+                    <td>Enter UserName</td>
+                    <td><input type="text" placeholder="Enter UserName" /></td>
+                </tr>
+                <tr>
+                    <td>Enter Password</td>
+                    <td><input type="password" placeholder="Enter Password" /></td>
+                </tr>
+                <tr>
+                    <td>Select Gender</td>
+                    <td><input type="radio" name="gender" value="Female" />Female &nbsp;&nbsp;&nbsp; <input type="radio"
+                            name="gender" value="Male" />Male</td>
+                </tr>
+
+                <tr>
+                    <td>Select Country</td>
+                    <td><select>
+                            <option value="India">INDIA</option>
+                            <option value="USA">USA</option>
+                            <option value="Others">Others</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>
+                        <input type="checkbox" value="Books">Reading Books<br/>
+                        <input type="checkbox" value="Browsing">Browsing<br/>
+                        <input type="checkbox" value="Gaming">Gaming<br/>
+                        <input type="checkbox" value="Others">Other
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea rows="10" cols="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Register"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

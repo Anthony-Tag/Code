@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Demo</title>
+</head>
+<body>
+    <h3>Promises Demo</h3>
+    <p>Promises are also another way to handle asynchronous programming in JS, where it deals loke a Promise in a real life like how we gurantee that
+        we are hoing to do something in the future for sure.....
+    </p>
+    <p> 
+        Promise object has 3 states
+        <br>
+        1) Pending : Initial state, before the promise actually succeds or fails...
+        2) Resolved : Promise is been hept i.e it has completed the promise action.
+        3) Rejected : Unable to keep the promise here... i.e, it is failed to keep it....
+    </p>
+
+</body>
+<script>
+    let prol=new Promise(function(resolve, reject){
+        setTimeout(()=>{
+            resolve("I resolve it......")
+        },3000)
+    });
+</script>
+</html>

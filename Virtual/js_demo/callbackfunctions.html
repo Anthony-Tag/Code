@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <h1>Callback Functions</h1>
+    <p>JS is an interpreter and it runs the code top to bottom is swquential order.... in some casseswe
+        may need code that runs or it should run after something has happened on the page which is not seequential....
+        this style of programming is called as ASYNCHRONOUS Programming.
+    </p>
+    <p>Callbacks will make sure that the sunction is not going to run before a task is completed but will run right after the task has completed</p>
+
+    <script> let n= function(){
+        console.log("I will be displayed after 3 seconds.......")
+    }
+    setTimeout(n,3000);
+
+    setTimeout(function(){
+        console.log("Hey anonymous after 5 seconds")
+    },5000);
+    setTimeout(()=>{
+        console.log("Hey arrow after 7 seconds")
+    },7000);
+
+        
+    </script>
+
+</body>
+</html>

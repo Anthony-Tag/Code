@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Emp CRUD</title>
+</head>
+
+<body>
+    <h1>EMP CRUD with JAVALIN</h1>
+    <input id="name" type="text" name="" value="Enter Name">
+    <input id="age" type="text" name="" value="Enter Age">
+    <input id="salary" type="text" name="" value="Enter Salary">
+    <button id="f1">POST Employee</button>
+    <br>
+    <button id="f2">Get All Employees</button>
+    <input id="id" type="text" name="" value="Enter Id">
+    <button id="f3">Get Employee</button>
+    <div class="container" id="results">
+    </div>
+    <script>//POST
+        f1.addEventListener("click", () => {
+            let n = document.getElementById("name").value
+            let a = document.getElementById("age").value
+            let s = document.getElementById("salary").value
+            let url = "http://localhost:9000/employee";
+            fetch(url, {
+                method: 'POST',
+                body: JSON.stringify({
+                    name: n,
+                    age: a,
+                    salary: s
+                }),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            })
+                .then(res => res.json())
+                .then(res1 => {
+                    console.log(res1)
+                    let data = "<table class='table table-bordered table-striped'><thead class='thead-dark'><tr><th>Employee ID</th><th>Employee Name</th><th>Employee Age</th><th>Employee Salary</th></tr></thead>";
+                    data = data + "<tr><td>" + res1.id + "</td>"
+                    data = data + "<td>" + res1.name + "</td>"
+                    data = data + "<td>" + res1.age + "</td>"
+                    data = data + "<td>" + res1.salary + "</td></tr>"
+                    data = data + "</table>"
+                    document.getElementById("results").innerHTML = data;
+                });
+        })
+    </script>
+    <script>//GET all
+        f2.addEventListener("click", () => {
+            let url = "http://localhost:9000/employees";
+            fetch(url)
+                .then(res => res.json())
+                .then(res1 => {
+                    console.log(res1)
+                    let data = "<table class='table table-bordered table-striped'><thead class='thead-dark'><tr><th>Employee ID</th><th>Employee Name</th><th>Employee Age</th><th>Employee Salary</th></tr></thead>";
+                    res1.forEach(element => {
+                        data = data + "<tr><td>" + element.id + "</td>"
+                        data = data + "<td>" + element.name + "</td>"
+                        data = data + "<td>" + element.age + "</td>"
+                        data = data + "<td>" + element.salary + "</td></tr>"
+                    });
+                    data = data + "</table>"
+                    document.getElementById("results").innerHTML = data;
+                });
+        })
+    </script>
+    <script>//GET id
+        f3.addEventListener("click", () => {
+            let id = document.getElementById("id").value
+            let url = "http://localhost:9000/employee/"+id;
+            fetch(url)
+                .then(res => res.json())
+                .then(res1 => {
+                    console.log(res1)
+                    let data = "<table class='table table-bordered table-striped'><thead class='thead-dark'><tr><th>Employee ID</th><th>Employee Name</th><th>Employee Age</th><th>Employee Salary</th></tr></thead>";
+                    data = data + "<tr><td>" + res1.id + "</td>"
+                    data = data + "<td>" + res1.name + "</td>"
+                    data = data + "<td>" + res1.age + "</td>"
+                    data = data + "<td>" + res1.salary + "</td></tr>"
+                    data = data + "</table>"
+                    document.getElementById("results").innerHTML = data;
+                });
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>1 on 1 API Examples</title>
+</head>
+<body>
+    <h1>1 on 1 API Examples</h1>
+    <span>
+        <button id = "f1">Get all movies</button>
+        <br>
+        <input id = "i1" type="text" name="" value="Enter title">
+        <button id = "f2" type = "text">Get description of movie</button>
+    </span>
+    <div class = "container" id="results">
+    </div>
+    <SCRIPT>
+        f1.addEventListener("click", ()=>{
+        let url="https://ghibliapi.herokuapp.com/films";
+        fetch(url)
+        .then(res=>res.json())
+        .then(res1=>{console.log(res1)
+            console.log(res1[0].title)
+            let data="<table class='table table-striped table-bordered table-hover table-success'><thead class='thead-dark'><tr><th>Title</th><th>Release Date</th><th>Run Time in mins</th></tr>"
+                res1.forEach(element => {
+                    data=data+"<tr><td>"+element.title+"</td>"
+                    data=data+"<td>"+element.release_date+"</td>"
+                    data=data+"<td>"+element.running_time+"</td></tr>"
+                });
+                data=data+"</table>"
+                document.getElementById("results").innerHTML=data;
+            });
+        })
+</script>
+<script>
+    f2.addEventListener("click", ()=>{
+        let url="https://ghibliapi.herokuapp.com/films"
+        let name = document.getElementById("i1").value
+        console.log("name"+name)
+        fetch(url)
+        .then(res=>res.json())
+        .then(res1=>{console.log(res1)
+            let data="<table class='table table-striped table-bordered table-hover table-success'><thead class='thead-dark'><tr><th>Title</th><th>Description</tr>"
+                res1.forEach(element => {
+                if (element.title == name){
+                    data=data+"<tr><td>"+element.title+"</td>"
+                    data=data+"<td>"+element.description+"</td></tr>"
+                }
+                });
+                data=data+"</table>"
+                document.getElementById("results").innerHTML=data;
+            });
+        })
+</script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
