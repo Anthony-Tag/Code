@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class EmployeeServiceImpl implements EmployeeService {
 
@@ -32,7 +33,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public void removeEmployee(int id) {
-        map.remove(getEmployeeId(id));
+        map.remove(id);
     }
 
     @Override
@@ -43,6 +44,16 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public List<Employee> getEmployeesByAge(int age) {
 
-        return null;
+        return map.values().stream().filter(emp->emp.getAge()==age).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Employee> getEmployeesBySalary(int salary) {
+        return map.values().stream().filter(emp->emp.getSalary()==salary).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Employee> getEmployeesByName(String name) {
+        return map.values().stream().filter(emp->emp.getName()==name).collect(Collectors.toList());
     }
 }

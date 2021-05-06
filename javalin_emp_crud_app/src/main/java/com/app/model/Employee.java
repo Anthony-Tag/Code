@@ -5,6 +5,10 @@ public class Employee {
     private double salary;
     private int id;
 
+    public Employee(){
+
+    }
+
     public Employee(String name, int age, double salary, int id) {
         this.name = name;
         this.age = age;

@@ -9,7 +9,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         EmployeeService service=new EmployeeServiceImpl();
-        Javalin app= Javalin.create().start(9000);
+        Javalin app = Javalin.create(config->config.enableCorsForAllOrigins()).start(9000);
 
         app.post("/employee",ctx -> {
             Employee employee=ctx.bodyAsClass(Employee.class);
@@ -29,11 +29,11 @@ public class Main {
             ctx.json(employee);
         });
 
-        app.delete("/employee",ctx -> {
-            //Employee employee=ctx.bodyAsClass(Employee.class);
+        app.delete("/employee/:id", ctx -> {
+            // Employee employee=ctx.bodyAsClass(Employee.class);
             int id = Integer.parseInt(ctx.pathParam("id"));
             service.removeEmployee(id);
-            ctx.result("Employee with id "+ id + " is removed");
+            ctx.result("Employee with id " + id + " removed successfully");
         });
 
         app.get("/employees",ctx -> {
@@ -41,9 +41,14 @@ public class Main {
             ctx.json(employees);
         });
 
-        app.get("/employees",ctx -> {
-            List<Employee> employees=service.getEmployeesByAge(Integer.parseInt(ctx.pathParam("age")));
-            ctx.json(employees);
+        app.get("/employees/:age", ctx -> {
+            List<Employee> employeeList = service.getEmployeesByAge(Integer.parseInt(ctx.pathParam("age")));
+            ctx.json(employeeList);
+        });
+
+        app.get("/employees/:salary", ctx -> {
+            List<Employee> employeeList = service.getEmployeesBySalary(Integer.parseInt(ctx.pathParam("salary")));
+            ctx.json(employeeList);
         });
     }
 }

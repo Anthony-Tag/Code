@@ -11,4 +11,6 @@ public interface EmployeeService {
     public void removeEmployee(int id);
     public List<Employee> getEmployeesList();
     public List<Employee> getEmployeesByAge(int age);
+    public List<Employee> getEmployeesBySalary(int salary);
+    public List<Employee> getEmployeesByName(String name);
 }
