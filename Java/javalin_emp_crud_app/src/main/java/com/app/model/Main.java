@@ -41,12 +41,12 @@ public class Main {
             ctx.json(employees);
         });
 
-        app.get("/employees/:age", ctx -> {
+        app.get("/employees/age/:age", ctx -> {
             List<Employee> employeeList = service.getEmployeesByAge(Integer.parseInt(ctx.pathParam("age")));
             ctx.json(employeeList);
         });
 
-        app.get("/employees/:salary", ctx -> {
+        app.get("/employees/salary/:salary", ctx -> {
             List<Employee> employeeList = service.getEmployeesBySalary(Integer.parseInt(ctx.pathParam("salary")));
             ctx.json(employeeList);
         });
