@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32e7ca78-a41e-462d-8a3d-97776fd8135c" name="Default Changelist" comment="" />
+    <list default="true" id="32e7ca78-a41e-462d-8a3d-97776fd8135c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Virtual/Hello-Angular/src/app/hero-list/hero-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Virtual/Hello-Angular/src/app/hero-list/hero-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Virtual/Hello-Angular/src/app/hero-list/hero-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Virtual/Hello-Angular/src/app/hero-list/hero-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Virtual/Hello-Angular/src/app/star/star.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Virtual/Hello-Angular/src/app/star/star.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Virtual/Hello-Angular/src/app/star/star.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Virtual/Hello-Angular/src/app/star/star.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Virtual/Hello-Angular/src/app/star/star.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Virtual/Hello-Angular/src/app/star/star.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Virtual/Hello-Angular/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Virtual/Hello-Angular/src/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
