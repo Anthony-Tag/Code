@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms'; //This is a type of reactive form in Angular
 import { Router } from '@angular/router';
 import { PokeService } from '../services/poke.service';
 
@@ -10,48 +10,57 @@ import { PokeService } from '../services/poke.service';
 })
 export class WelcomeComponent implements OnInit {
 
-  currentPokemon:string = "No Pokemon";
+  currentPokemon:string = "No pokemon";
 
   pokeGroup = new FormGroup({
     id: new FormControl(""),
     name: new FormControl("")
-  })
+  });
+
   constructor(private router:Router, private pokeServ: PokeService) { }
 
-  swapView(){
-    this.router.navigate(["/superhero"])
+  swapView()
+  {
+    this.router.navigate(["/superheroes"]);
   }
 
-  pokeGetOne(): void{
-    this.pokeServ.retrievePokemon().subscribe(
+  pokeGetOne(): void
+  {
+    this.pokeServ.retrievePokemon().subscribe( //Subscribe method will give a response everytime the publisher publishes an event
       (response) => {
-        console.log(response)
+        console.log(response);
         this.currentPokemon = response["name"];
       }
     )
   }
-  pokeGetTwo(): void{
-    this.pokeServ.retrievePokemonTwo().subscribe(
+
+  pokeGetTwo(): void
+  {
+    this.pokeServ.retrievePokemonTwo().subscribe( //Creating an interface allows us to have specific information from that observable
       (response) => {
         console.log(response.name);
-        this.currentPokemon = `name: ${response.name} id: ${response.id} base experience ${response.base_experience}`;
+        console.log(response.id);
+        console.log(response.base_experience);
+        this.currentPokemon = `name: ${response.name} id: ${response.id} base experience: ${response.base_experience}`;
       }
     )
   }
 
-  pokeGetThree(pokeGroup: FormGroup): void{
-    if (pokeGroup.get("name").value)
+  pokeGetThree(pokeGroup: FormGroup): void
+  {
+    if(pokeGroup.get("name").value) //Note: remember how string truthy and falsy work
     {
-      this.pokeServ.retrievepokemonThree(pokeGroup.get("name").value).subscribe(
+      this.pokeServ.retrievePokemonThree(pokeGroup.get("name").value).subscribe(
         (response) => {
-          this.currentPokemon = `name: ${response.name} id: ${response.id} base experience ${response.base_experience}`;
+          this.currentPokemon = `name: ${response.name} id: ${response.id}`;
         }
       )
-    }else if(pokeGroup.get("id").value)
+    }
+    else if(pokeGroup.get("id").value)
     {
-      this.pokeServ.retrievepokemonThree(pokeGroup.get("id").value).subscribe(
+      this.pokeServ.retrievePokemonThree(pokeGroup.get("id").value).subscribe(
         (response) => {
-          this.currentPokemon = `name: ${response.name} id: ${response.id} base experience ${response.base_experience}`;
+          this.currentPokemon = `name: ${response.name} id: ${response.id}`;
         }
       )
     }

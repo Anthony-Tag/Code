@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -9,7 +9,8 @@ import { PrependPipe } from './shared/prepend.pipe';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import {HttpClientModule} from "@angular/common/http";
+import { LoginComponent } from './login/login.component';
 
 @NgModule({ 
   declarations: [ //This will hold our references to our componenets
@@ -18,17 +19,21 @@ import { HttpClientModule } from '@angular/common/http';
     StarComponent,
     PrependPipe,
     WelcomeComponent,
-    ProfileComponent
+    ProfileComponent,
+    LoginComponent
   ],
   imports: [ //This is where we reference the node_modules
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule, //Whenever you do a reactive form you have to import this
+
 
     RouterModule.forRoot([
       {path: "superheroes", component: HeroListComponent},
       {path: "welcome", component: WelcomeComponent},
-      {path: "profile/:heroname", component: ProfileComponent}
+      {path: "profile/:heroname", component: ProfileComponent},
+      {path: "login", component:LoginComponent}
     ])
   ],
   providers: [], //This is where we reference services

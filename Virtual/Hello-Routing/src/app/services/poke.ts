@@ -1,5 +1,6 @@
-export interface IPokemon{
-    name:string
-    id: number
-    base_experience: number
+export interface IPokemon
+{
+    name: string;
+    id: number;
+    base_experience: number;
 }
