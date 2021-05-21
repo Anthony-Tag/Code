@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="h1" class="com.app.model.Hello">
+        <!--        property tag refers to setter method of hello class, name is the fieldname this line below will call
+        setMessage(value) from the Hello class
+        -->
+        <property name="message" value="Hello World From Spring Bean using SETTER Injection"></property>
+    </bean>
+
+    <bean id="h2" class="com.app.model.Hello">
+        <!--        constructor-arg below referes to constructor injection pointing to Hello class with message as
+                    parameter to it
+        -->
+        <constructor-arg name="message" value="Hello World From Spring Bean using CONSTRUCTOR Injection"></constructor-arg>
+    </bean>
+
+    <bean id="h3" class="com.app.model.Hello" scope="prototype">
+        <property name="message" value="Hello World From Prototype Scope"></property>
+    </bean>
+
+    <bean id="hl" class="com.app.model.HelloLazy" lazy-init="true" >
+        <property name="message" value="Hello from HelloLazy"></property>
+    </bean>
+</beans>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="p2" class="com.app.model.Projects">
+        <property name="pid" value="102"/>
+        <property name="projectName" value="Bank SQl rewrite"/>
+    </bean>
+    <bean id="e1" class="com.app.model.Employee">
+        <property name="id" value="1001"/>
+        <property name="name" value="Joshef Kracoski"/>
+        <property name="permanentAddress" ref="a1"/>
+        <property name="teamList">
+            <list>
+                <ref bean="p1"></ref>
+                <ref bean="p2"></ref>
+            </list>
+        </property>
+    </bean>
+    <bean id="a1" class="com.app.model.Address">
+    <property name="aid" value="8080"/>
+    <property name="city" value="Tinley Park"/>
+    <property name="zip" value="60477"/>
+</bean>
+    <bean id="p1" class="com.app.model.Projects">
+        <property name="pid" value="101"/>
+        <property name="projectName" value="Bank Logs"/>
+    </bean>
+</beans>
