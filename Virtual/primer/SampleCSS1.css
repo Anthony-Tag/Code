@@ -1,0 +1,91 @@
+*{
+    color: tomato;
+}
+
+h1::before{
+    content: url(images/pic.png);
+}
+p::first-line{
+    color: yellow;
+    font-variant: small-caps;
+}
+
+p::first-letter{
+    color: tomato;
+    font-variant: small-caps;
+    font-size: xx-large;
+}
+
+::selection{
+    background-color: yellow;
+
+}
+input[type="text"]{
+    background-color: #3cbc8d;
+    padding: 20px 20px;
+    margin: 100px 100px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid red;
+    color: white;
+    outline: none;
+}
+
+input[type="email"]{
+    background-color: yellow;
+    
+}
+
+a[href="http://www.google.com"]{
+    background-color: yellow;
+}
+input{
+    width: 50%;
+    background-color: whitesmoke;
+}
+img{
+    width: 320;
+    border: 10px solid red;
+    padding: 10px;
+    margin: 0;
+}
+div{
+    width: 300px;
+    border: 50px solid green;
+    padding:  50px;
+    margin: 20px;
+    
+}
+body{
+    background-color: aqua;
+}
+
+h1{
+    color: lightcoral;
+    text-align: center;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+#main{
+    text-align: justify;
+    color: red;
+}
+
+.center{
+    text-align: right;
+    color: seagreen;
+}
+
+.center p{
+    text-align: left;
+    color: steelblue;
+}
+
+h1,h2,#main, .center{
+    text-align: left;
+}

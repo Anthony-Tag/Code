@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+    <title>Good Vibes From</title>
+
+</head>
+
+<body style="background-color: rgb(61, 232, 235);">
+    <h1 style="text-align: center; font-size: 500%; margin-top: 0px;">Good Vibes Form</h1>
+    <div style="background-color: antiquewhite; margin: 20px; margin-left: 70px; margin-right: 70px;">
+        <h2 style="text-align: center; padding-top: 40px;">Tell us something positive that happened to you today</h2>
+        <Form style="font-size: 150%;" action="/action_page.php">
+            <div class="row">
+                <div class="column" style="text-align: right;">
+                    <label for="name">Name</label><br><br>
+                    <Label for="email">Email</Label><br><br>
+                    <Label for="scale">On a scale of 1-10, how good was it?</Label><br><br>
+                    <Label for="where">Where did it happen?</Label><br><br><br>
+                    <Label for="time">At what time of day did it happen?</Label><br><br><br>
+                    <Label for="emotion">What emotions did you experience?<br>(Select all that
+                        apply)</Label><br><br><br><br><br>
+                    <Label for="scale">Please describe your positive experience.</Label><br><br>
+
+
+                </div>
+                <div class="column" style="text-align: left;">
+                    <input type="text" placeholder="Enter your name" name="name" id="name"><br><br>
+                    <input type="email" placeholder="Enter your email address" name="email" id="email"><br><br>
+                    <input type="text" placeholder="Enter a number between 1 and 10" name="scale" id="scale"><br><br>
+                    <select name="where" id="where">
+                        <option value="at_home">At home</option>
+                        <option value="out">Out of home</option>
+                    </select><br><br>
+                    <input type="radio" name="time" id="morning">
+                    <label for="morning">Morning</label><br>
+                    <input type="radio" name="time" id="afternoon">
+                    <label for="afternoon">Afternoon</label><br>
+                    <input type="radio" name="time" id="evening">
+                    <label for="evening">Evening</label><br><br>
+                    <input type="checkbox" name="emotion" id="excited">
+                    <label for="excited">Excited</label><br>
+                    <input type="checkbox" name="emotion" id="humbled">
+                    <label for="humbled">Humbled</label><br>
+                    <input type="checkbox" name="emotion" id="elated">
+                    <label for="elated">Elated</label><br>
+                    <input type="checkbox" name="emotion" id="loved">
+                    <label for="loved">Loved</label><br>
+                    <input type="checkbox" name="emotion" id="enthusiastic">
+                    <label for="enthusiastic">Enthusiastic</label>
+                    <br><br>
+                    <textarea name="experience" id="experience" placeholder="Enter your experience here..."></textarea>
+                </div>
+            </div>
+            <button type="submit"
+                style="margin-bottom: 10px; text-align: center; background-color: rgb(77, 165, 192); color: white;">Submit</button>
+
+        </Form>
+    </div>
+</body>
+
+
+
+</html>
