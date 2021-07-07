@@ -21,7 +21,6 @@ public class PlayerCrudServiceImpl implements PlayerCrudService {
 	
 	@Override
 	public Player addPlayer(Player player) {
-		// TODO Auto-generated method stub
 		return restTemplate.postForObject(url, player, Player.class);
 	}
 
