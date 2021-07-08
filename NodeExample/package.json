@@ -1,0 +1,17 @@
+{
+  "name": "sapleexpress",
+  "version": "1.0.0",
+  "description": "Sample App",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "sample"
+  ],
+  "author": "Anthony",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

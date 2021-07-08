@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\Desktop\\Pojects\\project_1"
+		},
+		{
+			"path": "Virtual"
+		},
+		{
+			"path": "..\\usf_bsn_cts_cdi_10week\\Week6 - P2,Spring\\angular_player_app"
+		},
+		{
+			"path": "..\\Project3\\Project-3-Client"
+		},
+		{
+			"path": "..\\Project2\\Frontend\\Vaxify2"
+		},
+		{
+			"path": "RevPro"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Virtual"
+	}
+}

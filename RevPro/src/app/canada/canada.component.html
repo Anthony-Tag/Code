@@ -1,25 +1,18 @@
 <h2>My Hero List</h2>
 
 <ul class="heroes">
-    <li *ngFor="let hero of heros" (click)="onSelect(hero)">
-        <span class="badge">        
-            <!-- {{hero.id}} -->
-            {{ hero.name }}
-        </span>
+    <li *ngFor="let hero of heros">
+        <a routerLink="/detail/{{hero.id}}">
+        <span class="badge">
+            {{hero.id}}
+
+
+
+        </span>{{ hero.name }}
+    </a>
     </li>
 </ul>
+<app-hero-detail [hero]="selectedHero">
 
 
-<div *ngIf="selectedHero">
-    <h2>{{selectedHero?.name| uppercase}} Details</h2>
-    <span>
-        ID:
-    </span>
-    {{selectedHero?.id}}
-
-</div>
-
-<div *ngIf="selectedHero">
-    <label for="hero-name">Hero Name:</label>
-    <input id="hero-name" placeholder="Enter your name" [(ngModel)]="selectedHero.name">
-</div>
+</app-hero-detail>
