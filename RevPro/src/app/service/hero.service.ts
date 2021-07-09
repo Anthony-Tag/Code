@@ -15,4 +15,8 @@ export class HeroService {
     const heroes =of(Heros);
     return heroes;
   }
+  getHero(id: number):Observable<Hero>{
+    const hero=Heros.find(h=>h.id === id)!;
+    return of(hero);
+  }
 }
