@@ -2,6 +2,9 @@ const express = require('express')
 const app=express()
 const port=3000
 
+app.use('/static/', express.static(`NodeExamples`))
+app.use(express.static(`NodeExamples`))
+
 app.get('/', function(req,res){
     res.send("Hello World!")
 })
@@ -17,8 +20,7 @@ app.put('/', function(req, res){
 })
 // app.static(root, [options])
 
-app.use('/static/', express.static(`NodeExamples`))
-app.use(express.static(`NodeExamples`))
+
 
 app.listen(port, ()=>{
     console.log('Example app listening at http://localhost:${port}')

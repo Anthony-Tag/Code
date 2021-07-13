@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { CanadaComponent } from './canada/canada.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { HttpClientModule } from '@angular/common/http';
+import { InMemoryDataService } from './service/in-memory-data.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-  ],
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { dataEncapsulation: false })
+      ],
   providers: [],
   bootstrap: [AppComponent]
 })
